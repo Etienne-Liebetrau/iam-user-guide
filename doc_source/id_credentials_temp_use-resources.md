@@ -1,5 +1,7 @@
 # Using Temporary Security Credentials to Request Access to AWS Resources<a name="id_credentials_temp_use-resources"></a>
 
+Please include minimum supported CLI version infromation
+
 You can use temporary security credentials to make programmatic requests for AWS resources with the [AWS SDKs](https://aws.amazon.com/tools/) or API calls, the same way that you can use long\-term security credentials such as IAM user credentials\. However, there are a few differences:
 + When you make a call using temporary security credentials, the call must include a session token, which is returned along with those temporary credentials\. AWS uses the session token to validate the temporary security credentials\. 
 + The temporary credentials expire after a specified interval\. After the credentials expire, any calls that you make with those credentials will fail, so you must get a new set of credentials\. 
